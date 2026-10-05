@@ -1,0 +1,324 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*Aqui personalizo index, menu de navegacion*/
+
+.pagina{
+    width: 100%;
+}
+nav{
+    background-color: #153667;
+    width: 100%;
+    min-height: 100px;
+    border-radius: 20px 20px 0px 0px;
+    display: flex;
+    align-items: center;
+}
+nav img{
+    width: 65px;
+}
+.enlaces-menu{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.enlaces-menu a{
+    color: white;
+    text-decoration: none;
+    font-family: "Outfit", sans-serif;   
+    
+}
+.enlaces-menu a:hover{
+    color: darkgrey;
+}
+nav button{
+    margin-left: 80%;
+    background-color: rgb(165, 243, 87);
+    color: white;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+}
+nav button:hover{
+    background-color: rgb(178, 255, 171);
+}
+iframe{
+    width: 100%;
+    min-height: 100vh;
+    border: none;
+}
+
+/*==========================================
+AQUI PERSONALIZO INICIO
+============================================*/
+.portada{
+    min-height: calc(102vh);
+  background-image: url("../Imagenes/portada.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+}
+.logo_portada{
+    position: absolute;
+    width: 150px;
+    left: 80%;
+}
+.texto-portada{
+    color: white;
+    font-family: "Outfit", sans-serif;
+    font-size: 30px;
+    padding: 20px;
+}
+h1{
+    font-family: "Outfit", sans-serif;
+    color: white;
+    font-size: 60pt;
+    padding: 20px;
+}
+h2{
+    color: greenyellow;
+    font-size: 80px;
+    font-family: "Outfit", sans-serif;
+    padding: 20px;
+}
+.linea-verde1{
+    color: greenyellow;
+}
+.descripcion{
+    color: white;
+    font-family: "Outfit", sans-serif;
+    font-size: 25px;
+    padding: 20px;
+}
+
+.boton-principal{
+    background-color: yellowgreen;
+    padding: 15px 35px;
+    border-radius: 30px;
+    border: none;
+    color: white;
+}
+.boton-principal:hover{
+     background-color: rgb(178, 255, 171);
+}
+.productos-destacados{
+    background-color: rgba(255, 255, 255, 0.65);
+    width: 60%;
+    border-radius: 30px;
+    padding: 20px;
+}
+.encabezado-productos{
+    display: flex;
+    justify-content: space-between;
+    font-family: "Outfit", sans-serif;
+}
+.linea-verde2{
+    color: greenyellow;
+}
+.ver-todo{
+    color: black;
+    text-decoration: none;
+}
+.ver-todo:hover{
+    color: white;
+}
+h3{
+    font-family: "Outfit", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 10px;
+}
+.productos-tarjetas{
+    display: flex;
+    justify-content: space-around;
+    gap: 25px;
+}
+.tarjetas{
+    background-color: #f6f0e5;
+    width: 180px;
+    padding: 10px;
+    border-radius: 25px;
+}
+.tarjetas:hover{
+    background-color: rgb(75, 75, 75);
+    cursor: pointer;
+}
+.tarjetas img{
+    width: 100%;
+}
+
+/*==========================================
+AQUI PERSONALIZO FOOTER
+============================================*/
+
+footer{
+    width: 100%;
+    min-height: 100px;
+    background-color: #153667;
+    color: white;
+    font-family: "Outfit", sans-serif;   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*==========================================
+AQUI PERSONALIZO SECCIÓN DE ROPA
+============================================*/
+.mujer,
+.hombre{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    gap: 30px;
+}
+.producto{
+    position: relative;
+    height: 300px;
+    background-color: #f5eee1;
+    margin-bottom: 50px;
+    border-radius: 30px;
+    padding: 20px;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.producto:hover{
+    background-color: #777;
+}
+.producto img{
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+}
+.producto p:nth-of-type(1){
+    color: #153667;
+    font-family: "Outfit", sans-serif; 
+    font-weight: bold;
+    font-size: 15px;
+}
+.producto p:nth-of-type(2){
+    font-weight: bold;
+    font-size: 18px;
+    font-family: "Outfit", sans-serif; 
+}
+.pr-ant{
+    color: #888;
+    text-decoration: line-through;
+    font-weight: lighter;
+    margin-left: 10px;
+    font-size: 10px;
+}
+.desc{
+    color: crimson;
+    margin-left: 10px;
+    font-size: medium;
+    background-color: #ffd2f1;
+}
+.producto button img{
+    width: 30px;
+    height: 30px;
+}
+.producto button{
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    border-radius: 50px;
+    border: none;
+}
+.producto button:hover{
+    background-color: #777;
+}
+.seccion{
+    font-size: x-large;
+    font-family: "Outfit", sans-serif; 
+    margin-top: 30px;
+    margin-left: 60px;
+}
+#color_prod1{
+    color: #153667;
+    font-size: 50px;
+}
+#color2_prod1{
+    color: #2bad03;
+    font-size: 50px;
+}
+#color3_prod1{
+    color: #ad032b;
+    font-size: 50px;
+}
+#color_prod2{
+    color: #350cad;
+    font-size: 50px;
+}
+#color2_prod2{
+    color: #1cb8ed;
+    font-size: 50px;
+}
+#color3_prod2{
+    color: #00ff84;
+    font-size: 50px;
+}
+#color_prod3{
+    color: #ea2cc4;
+    font-size: 50px;
+}
+#color2_prod3{
+    color: #8134da;
+    font-size: 50px;
+}
+#color3_prod3{
+    color: #f05d22;
+    font-size: 50px;
+}
+#Hcolor_prod1{
+    color: #3b22f7;
+    font-size: 50px;
+}
+#Hcolor2_prod1{
+    color: #30e7bf;
+    font-size: 50px;
+}
+#Hcolor3_prod1{
+    color: #38c66a;
+    font-size: 50px;
+}
+#Hcolor_prod2{
+    color: #fa484b;
+    font-size: 50px;
+}
+#Hcolor2_prod2{
+    color: #9ef12b;
+    font-size: 50px;
+}
+#Hcolor3_prod2{
+    color: #f0ed2c;
+    font-size: 50px;
+}
+#Hcolor_prod3{
+    color: #31abf7;
+    font-size: 50px;
+}
+#Hcolor2_prod3{
+    color: #6f2672;
+    font-size: 50px;
+}
+#Hcolor3_prod3{
+    color: #5f0e37;
+    font-size: 50px;
+}
+
+
+
+
+
+
+
+    
